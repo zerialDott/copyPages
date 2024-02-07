@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./logIn.css">
+    <title>log in</title>
+</head>
+<body>
+    <div class="navBar">
+        <nav class="otro">
+            <img src="./src/logos_/arrow-left.svg" alt="" >
+            <h1 class="back">Regresar</h1>
+        </nav>
+    </div>
+    <div class="class-container">
+        <div class="form-container">
+            <div class="mobile-logo">
+                <img src="./src/logos_/bizmo_B_logo_svg.svg" alt="" class="b b-logo" id="b">
+            </div>
+            <div class="desktop-logo">
+                <img src="./src/logos_/bizmoLogo.svg" alt="logo" class="bizmo bizmo-logo">
+            </div>
+            
+            <form action="/" class="form" id="form">
+                <h1 class="title">Iniciar sesión</h1>
+                <h2 class="subtitle">Portal de comercio electronico B2B</h2>
+                <label for="email" class="label">Correo electrónico</label>
+                <input type="text" id="email" placeholder="ejemplo@email.com" class="input input-email">
+    
+                <label for="password" class="label label-password">Contraseña</label>
+                <input type="password" class="input input-password" placeholder="Escribe tu contraseña">
+                <p class="forgot"><a href="">Olvidé mí contraseña</a></p>
+    
+            </form>
+            <button class="button primary-btn" id="btn-logIn">Iniciar sesión
+            </button>
+
+            <span class="reg">
+                <p>¿Aun no tienes cuenta? <a href="">Registrate</a></p>
+            </span>
+        </div>
+    </div>
+    <footer class="foot">
+        © 2023 Bizmo, All rights reserved.
+    </footer>
+</body>
+</html>
