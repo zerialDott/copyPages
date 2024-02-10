@@ -1,0 +1,22 @@
+:root{
+    --sm:12px;
+    --md:14px;
+    --gd: 22px;
+    --black-btn: #121212;
+    --yellow-fill: #fbf901;
+    --gray-lay:#a9a9a9;
+    --background-lay: #F2F4F9;
+    --white-btn: #FBFCFD;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: 'Inter Tight', sans-serif;
+    background-color: var(--background-lay);
+}
+.navBar{
+    display: flex;
+    flex-direction: row;
+}
