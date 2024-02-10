@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./verify.css">
+    <title>Verificación de la identidad</title>
+</head>
+<body>
+    <header class="navBar">
+        <nav class="otro">
+            <img src="./src/logos_/arrow-left.svg" alt="">
+            <h1 class="back">Regresar</h1>
+        </nav>
+    </header>
+
+    <div class="class-container">
+        <div class="form-container">
+            <div class="mobile-logo">
+                <img src="./src/logos_/bizmo_B_logo_svg.svg" alt="" class="b b-logo" id="b">
+            </div>
+            <div class="desktop-logo">
+                <img src="./src/logos_/bizmoLogo.svg" alt="logo" class="bizmo bizmo-logo">
+            </div>
+            <form action="/" class="form">
+                <h1 class="title">Necesitamos verificar tu identidad</h1>
+                <h2 class="subtitle">Cómo te gustaría tu código de seguridad?</h2>
+                <label for="radioA" class="label label-top">
+                    <input type="radio" name="verification" id="radioA"> Mensaje de texto al ********89
+                </label>
+                <label for="radioB" class="label">
+                    <input type="radio" name="verification" id="radioB"> Enviame un correo al *******@gmail.com
+                </label>
+            </form>
+            <form class="btn-container">
+                <button class="btn-cancel">Cancelar</button>
+                <button class="btn-push">Recibir código</button>
+            </form>
+        </div>    
+    </div>
+
+    <footer>
+        © 2023 Bizmo, All rights reserved.
+    </footer>
+</body>
+</html>
