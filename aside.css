@@ -1,0 +1,132 @@
+:root{
+    --sm:12px;
+    --md:14px;
+    --gd: 22px;
+    --black-btn: #121212;
+    --yellow-fill: #fbf901;
+    --gray-lay:#a9a9a9;
+    --background-lay: #F2F4F9;
+    --white-btn: #FBFCFD;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter Tight', sans-serif;
+    background-color: var(--gray-lay);
+}
+#left{
+    background-color: var(--background-lay);
+    width: 310px;
+    height: 100vh;
+    position: fixed;
+    left: -50px;
+}
+.aside-contanier{
+    background-color: var(--background-lay);
+    min-height: 100vh;
+    width: 292px;
+    display: grid;
+    place-items: start;
+    border-radius: 38px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1)
+}
+.set-container{
+    display: grid;
+    place-items: center;
+    grid-template-rows: auto 1fr auto;
+    position: relative;
+    left: 0px;
+}
+.logo-container > img{
+    height: 120px;
+    width: 90%;
+}
+.logo-container {
+    width: 100%;
+    margin-top: -12px;
+    position: relative;
+}
+.logo-container::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    width: 100%;
+    height: 1px; /* Altura de la sombra */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)); 
+}
+.arrow-left{
+    position: absolute;
+    right: -70px;
+    top: 50px;
+    background-color: #f2f4f9a2;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.menu-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 12px;
+}
+.set{
+    display: flex;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    margin-left: 28px;
+    margin-bottom: 18px;
+    background-color: transparent;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+}
+.icon .text{
+    margin-left: 12px;
+    font-size: var(--sm);
+}
+.config-container{
+    min-height: 220px;
+    height: 260px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.newSet{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-left: 42px;
+    border: none;
+    margin-bottom: 18px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.newSet span{
+    color: var(--gray-lay);
+}
+.newSet .newText{
+    margin-left: 12px;
+    font-size: var(--sm);
+}
+@media(max-width:640px){
+    #left{
+        display: none;
+    }
+    .aside-contanier{
+        display: none;
+        background-color: transparent;
+    }
+}
