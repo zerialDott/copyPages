@@ -9,12 +9,12 @@
     --white-btn: #FBFCFD;
     --green-h: #2DC656;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: 'Inter Tight', sans-serif;
-}
-.navClass{
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    max-width:880px;
+    background-color: var(--background-lay);
 }
