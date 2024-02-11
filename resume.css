@@ -1,0 +1,20 @@
+:root{
+    --sm:12px;
+    --md:14px;
+    --gd: 22px;
+    --black-btn: #121212;
+    --yellow-fill: #fbf901;
+    --gray-lay:#a9a9a9;
+    --background-lay: #F2F4F9;
+    --white-btn: #FBFCFD;
+    --green-h: #2DC656;
+}
+body{
+    font-family: 'Inter Tight', sans-serif;
+}
+.navClass{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    max-width:880px;
+}
