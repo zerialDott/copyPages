@@ -10,7 +10,7 @@
     <title>Mensaje de texto</title>
 </head>
 <body>
-    <header>
+    <header class="header-container">
         <nav class="navBar">
             <img src="./src/logos_/arrow-left.svg" alt="">
             <h1 class="back">Regresar</h1>
@@ -20,7 +20,7 @@
     <div class="class-container">
         <div class="form-container">
             <div class="mobile-logo">
-                <img src="./src/logos_/bizmo_B_logo_svg.svg" alt="Logo del negocio">
+                <img src="./src/logos_/bizmo_B_logo_svg.svg" alt="Logo del negocio" class="b-logo">
             </div>
 
             <div class="desktop-logo">
@@ -29,13 +29,16 @@
 
             <h1 class="title">Necesitamos verificar tu identidad</h1>
             <form action="/" class="form">
+
                 <label for="radio" class="label">
-                    <input type="radio" name="" id="radio">Enviar Email al correo *******@gmail.com
+                    <input type="radio" name="" id="radio">Enviar correo electronico a *******@gmail.com
                 </label>
                 <h4 class="subtitle">Para verificar que es tú correo ingresa el codigo que te hemos hecho llegar y luego <span class="bold-text">"enviar código"</span> para recibir tu codigo</h4>
-                
-                <input type="password" name="" id="" placeholder="últimos 4 dígitos de tú número celular">
-                <a href="/">Usar una opción diferente</a>
+
+                <label for="password" class="label-password">
+                    <input type="password" name="" id="password" placeholder="Usa los números que hemos hecho llegar a tu correo">
+                </label>
+                <a href="/">Usar una opción de verificación diferente</a>
             </form>
             <form action="/" class="btn-container">
                 <button class="btn-cancel">Cancelar</button>
