@@ -1,13 +1,15 @@
 :root{
     --sm:12px;
     --md:14px;
-    --gd: 22px;
+    --md-flat:16px;
+    --gd: 18px;
     --black-btn: #121212;
     --yellow-fill: #fbf901;
     --gray-lay:#a9a9a9;
     --background-lay: #F2F4F9;
     --white-btn: #FBFCFD;
     --green-h: #2DC656;
+    --border-input: #dedede;
 }
 *{
     margin: 0;
@@ -17,4 +19,118 @@
 body{
     font-family: 'Inter Tight', sans-serif;
     background-color: var(--background-lay);
+    display: flex;
+    flex-direction: column;
+}
+.navClass{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 14vh;
+}
+.navLeft{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 120px;
+}
+.navRight{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    width: 60%;
+}
+/* lado izquierdo */
+.title h1{
+    font-size: var(--gd);
+    font-weight: 600;
+}
+/* lado derecho */
+.search-container{
+    width: 50%;
+}
+.btn-search{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    padding: 8px 8px 8px 18px;
+    border-radius: 16px;
+    border:1px solid var(--border-input);
+    background-color: transparent;
+}
+.btn-search input{
+    margin-left: 14px;
+    height: 28px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}
+.btn-search input::placeholder{
+    color: var(--border-input);
+    font-size: var(--md-flat);
+}
+/* btn del usuario */
+.last-child{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.push{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--white-btn);
+    height: 54px;
+    cursor: pointer;
+    width: 54px;
+    margin: 4px;
+    border-radius: 16px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.user{
+    display: flex;
+    align-items: center;
+    height: 54px;
+    width: 100%;
+    margin: 0px 12px 0px 4px;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--white-btn);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.img-user{
+    width: 40px;
+    height: 40px;
+}
+.img-user img{
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    margin-left: 4px;
+}
+.div-name{
+    width: 120px;
+}
+.name{
+    width: 100%;
+    font-size: var(--md);
+    text-align: start;
+    margin-left: 8px;
+    font-weight: bold;
+}
+.mail{
+    font-size: var(--sm);
+    font-weight: 500;
+    text-align: start;
+    margin-left: 8px;
+}
+.dot{
+    align-self: center;
+    justify-self: center;
+    width: 20px;
+    padding-right: 20px;
 }
